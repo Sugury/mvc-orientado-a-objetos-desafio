@@ -6,7 +6,7 @@ export type ContactsControllerOptions = {
 };
 
 class ContactsController {
-  contacts: ContactsCollection = {};
+  contacts: ContactsCollection = new ContactsCollection;
   constructor() {}
   processOptions(options: ContactsControllerOptions) {}
 }
